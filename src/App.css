@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.inlineInput{
+    font-size: 18px;
+    border: none;
+}
+.inlineInput:focus{
+    border: none;
+    outline: none;
+}
+.main-left{
+    padding: 0px 15px;
+    background-color: #003a78;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-direction: column;
+    width: 30vw;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+.main-right{
+    width: 70vw;
+}
+.mainHeading{
+    padding: 10px 0px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+.mainParent{
+    display: flex;
+    flex-direction: row;
+    background-color: #003a78;
+}
+.success{
+    font-size: 15px;
+}
+.updated{
+    padding: 10px 25px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.heading{
+    text-align: center;
+}
+.input{
+    padding: 20px 10px;
+    margin: 20px 0px;
+    /* height: 30vh; */
+    resize: none;
+    border-radius: 8px;
+    font-size: 22px;
+}
+.input:focus{
+    border: none;
+    outline: none;
+}
+.btnAddUp{
+    display: flex;
+    flex-direction: column;
+    
+}
+.saveBtn{
+    background-color: #e0eefc;
+    color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    margin:5px;
+    border: none;
+    font-size: 16px;
+    box-shadow: 0px 3px 10px rgb(103, 81, 126);
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+.saveBtn:active{
+    transform: scale(1.06);
+    transition: 0.06 all ease-in-out;
+}
+.BtnBox{
+    text-align: center;
+}
+.list{
+    background-color: #ffffff ;
+    box-shadow: 0px 3px 10px #c3cad1;
+    /* border: 2px solid rgb(214, 214, 214); */
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.list p{
+    color: #000000;
+    margin-bottom: 0px !important;
+    font-family: 'Lato', sans-serif;
+}
+@media screen and (min-width: 768px) {
+    .hidden{
+        display: none;
+    }
+
+}
+.updatedMobile{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .updatedMobile{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    
+    .heading{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .mainParent{
+        flex-direction: column !important;
+    }
+    .main-left{
+        height:100%;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .main-right{
+        width: 100%;
+        /* background-color: rgb(122, 88, 153); */
+    }
+    .allNotes{
+        /* top: 100% !important; */
+        position: sticky !important;
+        display: none;
+    }
+    .input{
+        height: 60px!important;
+    }
+  }
+  .effect{
+      padding: 3px 5px;
+  }
+  .showItems{
+      text-align: right;
+  }
+
+  .reverse{
+      /* display: flex; */
+      /* flex-direction: column; */
+      padding: 25px;
+      background-color: #e0eefc;
+      min-height: 100vh;
+      /* border-radius: 25px 0px 0px 0px ; */
+  }
+  .reverseArray{
+      display: flex; 
+      flex-direction: column-reverse;
+  }
+  .filter{
+      padding: 10px;
+      margin: 5px;
+  }
+  .rounded{
+    height: 20px;
+    background-color: #e0eefc;
+    border-radius: 20px 0px 0px 0px ;
+}
+
+  .allNotes{
+      background-color: #003a78;
+      text-align: center;
+      /* padding: 10px; */
+      position: sticky;
+     
+      align-items: center;
+      top: 0;
+      font-family: 'Lato', sans-serif;
+      color: #ffffff;
+  }
+  .allNotes-inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+  .deleteBtn{
+      padding: 2px 6px;
+      /* background-color: rgb(99, 99, 99); */
+      border: 1px solid #ffffff;
+      font-weight: bold;
+      color: rgb(70, 70, 70);
+      background-color: #ffffff;
+      font-size: 20px;
+
+      /* border-radius: 50%; */
+  }
+  .deleteBtn:active{
+      transform: scale(1.02);
+  }
+  .editbtn{
+    padding: 3px 6px;
+      /* background-color: rgb(99, 99, 99); */
+      color: rgb(70, 70, 70);
+  }
+
+  #messageBox{
+      padding: 10px 20px 10px ;
+      background-color: #ffffff;
+      margin-top: auto;
+      margin-bottom: 10px;
+      border-radius: 10px;
+  }
